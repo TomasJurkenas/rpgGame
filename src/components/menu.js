@@ -41,6 +41,7 @@ export function Menu() {
                <input></input>
                <label>Password</label>
                <input></input>
+               <button >log in</button>
            </form>
          :null }
        </div>
