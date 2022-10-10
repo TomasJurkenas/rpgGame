@@ -1,18 +1,18 @@
 import React from "react";
 import {Background} from "./components/intro";
-import {mainMenu} from "./components/mainMenu";
+import {MainMenu} from "./components/mainMenu";
 import {Menu} from "./components/menu";
 import {Route, Routes} from "react-router-dom";
 
 function App() {
   return (
-    <div>
+
         <Routes>
-            <Route path="/" element ={<Menu/>}/>
-            {/*<Route path="/mainMenu" element={<mainMenu/>}/>*/}
-        <Menu/>
+            {/*<Route path="/" element ={<Menu/>}/>*/}
+            <Route path="/" element={<MainMenu/>}/>
+            <Route path="/Menu" element={<Menu/>}></Route>
         </Routes>
-    </div>
+
   );
 }
 // router alternatives

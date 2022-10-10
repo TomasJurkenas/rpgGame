@@ -36,12 +36,12 @@ export function Menu() {
         </div>
 
 
-           {show?<form action={"login.php"} method={"post"}>
-               <label>Name</label>
-               <input></input>
+           {show?<form action={"../php/login.php"} method={"post"}>
+               <label>Login</label>
+               <input type="text" name="Login" ></input>
                <label>Password</label>
-               <input></input>
-               <button >log in</button>
+               <input type="text" name="Password"></input>
+                   <input type="submit"value="Submit"/>
            </form>
          :null }
        </div>

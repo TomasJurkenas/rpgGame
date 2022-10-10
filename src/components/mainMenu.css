@@ -1,0 +1,33 @@
+
+h1{
+    text-align: center;
+    background: linear-gradient(to right, rgb(78,250,99),rgb(121,66,222));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+nav{
+    display: flex;
+    gap: 55px;
+
+}
+main{
+    display: flex;
+}
+main:nth-child(1){
+    justify-content: flex-start;
+}
+main:nth-child(2){
+ justify-content: right;
+}
+
+img{
+    width: 500px;
+    height: 500px;
+
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
