@@ -41,7 +41,7 @@ export function Menu() {
                <input type="text" name="Login" ></input>
                <label>Password</label>
                <input type="text" name="Password"></input>
-                   <input type="submit"value="Submit"/>
+                   <input type="submit" value="Submit"/>
            </form>
          :null }
        </div>

@@ -6,13 +6,15 @@ import {Route, Routes} from "react-router-dom";
 
 function App() {
   return (
+      <>
+      <MainMenu/>
+        {/*<Routes>*/}
 
-        <Routes>
-            {/*<Route path="/" element ={<Menu/>}/>*/}
-            <Route path="/" element={<MainMenu/>}/>
-            <Route path="/Menu" element={<Menu/>}></Route>
-        </Routes>
-
+        {/*    /!*<Route path="/" element ={<Menu/>}/>*!/*/}
+        {/*    <Route path="/" element={<MainMenu/>}/>*/}
+        {/*    /!*<Route path="/Menu" element={<Menu/>}></Route>*!/*/}
+        {/*</Routes>*/}
+      </>
   );
 }
 // router alternatives
