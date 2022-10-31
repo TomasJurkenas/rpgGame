@@ -6,38 +6,17 @@ import './spinMenu';
 // issirinkti veikeja
 export function MainMenu (){
     const [spin, setSpin]=useState(0);
-    const[ constructorWork, setConstructorWork]= useState(false);
     const[show, setShow]=useState(true);
 
     const toggleShow = () => { setShow(value => !value);
 
     }
 
-    useEffect(()=>{
-        console.log()
-    },[])
-
-    useLayoutEffect(()=>{
-       console.log()
-    },[])
-
-    const constructor = () =>{
-        if(constructorWork)return;
-        console.log();
-        setConstructorWork(true)
 
 
-    }
-    // constructor (props) {
-    //     super(props)
-    //     this.state = {
-    //         speed: 3
-    //     }
-    // }
+
 // damusti sita
-  if(setShow(true)){
-      return true;
-  }
+  //3js
     return(
         <>
             <h1>Dungeon Crawler</h1>
