@@ -1,46 +1,51 @@
-import React, {useState, useEffect, useLayoutEffect} from "react";
+import React, {useState} from "react";
 import {Link} from "react-router-dom";
+import{ToggleButton, ToggleButtonGroup} from "@mui/material";
 import './mainMenu.css';
 import './spinMenu';
 
 // issirinkti veikeja
 export function MainMenu (){
-    const [spin, setSpin]=useState(0);
-    const[show, setShow]=useState(true);
-
-    const toggleShow = () => { setShow(value => !value);
-
-    }
+    const[show, setShow]=useState(false);
+    const onClick = () => {
+        setShow(!show);
+    };
 
 
-
-
-// damusti sita
-  //3js
+  //3js veikejo ft
     return(
         <>
             <h1>Dungeon Crawler</h1>
+
+
+
             <nav>
                 <Link to="/mainMenu">Home</Link>
                 <Link to="/contacts"> Contacts</Link>
             </nav>
             <main>
-                <div className={"lore-stat"}>about and stat
+                <div className={"lore-stat"}> about and stat
                     <nav>
-                        <button onClick={()=>setShow(true)} className={"Lore"} >
-                            senai senai
-                        </button>
-                        <button onClick={()=>setShow(false)} className={"stat"}>
-                            1 21  5 5 513 555
-                        </button>
+                        <ToggleButtonGroup
+                            color="primary"
+                            exclusive
+                            onClick={onClick}
+                            aria-label="Large sizes"
+                        >
+                            <ToggleButton  value="lore">Lore</ToggleButton>
+                            <ToggleButton  value="stat">Stats</ToggleButton>
+                        </ToggleButtonGroup>
                     </nav>
-                    {
-                        // show?<p>asfsfsafasf</p>:null;
-                        !show?<p>asfsaggggggggggggggggggg</p>:null
-                    }
+                    { !show ?
+                        <p>asfsfsafasf</p> : null }
+
+
+                    { show ?
+                        <p>451451414512151515</p> : null }
+
                 </div>
                 <div> veikejo ft
-                <img style={{animation: spin}} src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="asfsa"/>
+                <img  src="https://icatcare.org/app/uploads/2018/07/Thinking-of-getting-a-cat.png" alt="asfsa"/>
                 </div>
             </main>
         </>

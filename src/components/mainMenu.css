@@ -6,7 +6,13 @@ h1{
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
 }
+.lore-stat{
+    position: relative;
+}
 
+.lore-stat:first-child {
+    /*position: absolute;*/
+}
 nav{
     display: flex;
     gap: 55px;
@@ -18,16 +24,26 @@ main{
 main:nth-child(1){
     justify-content: flex-start;
 }
+
 main:nth-child(2){
  justify-content: right;
 }
+
+/*.lore{*/
+/*    position: absolute;*/
+/*    top: 8px;*/
+/*    left: 16px;*/
+
+/*}*/
+
+/*.stat{*/
+/*    position: absolute;*/
+/*    top: 8px;*/
+/*    right: 16px;*/
+/*}*/
 
 img{
     width: 500px;
     height: 500px;
 
-}
-@keyframes spin {
-    from {transform:rotate(0deg);}
-    to {transform:rotate(360deg);}
 }
